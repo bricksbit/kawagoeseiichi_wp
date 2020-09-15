@@ -1,0 +1,36 @@
+
+// .l-aside {
+//   grid-column: 2;
+//   grid-row: 1;
+// }
+.side_widget {
+  margin: 0 0 48px 0;
+  position: relative;
+}
+.widget_tab_post_list {
+  border: 1px solid #ddd;
+  font-size: 0;
+  padding: 20px 0 0 0;
+}
+.widget_tab_post_list li {
+  margin: 0 0 -1px 0;
+  overflow: hidden;
+  padding: 10px;
+  background: none;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.widget_tab_post_list .image {
+  /* float: left; */
+  width: 120px;
+  height: 120px;
+  margin: 0 14px 0 0;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}

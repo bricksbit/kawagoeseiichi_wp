@@ -1,0 +1,31 @@
+// ==========================================================================
+// utility/padding
+// ==========================================================================
+
+$padding-min: 1;
+$padding-max: 100;
+
+ @for $i from $padding-min through $padding-max {
+  .p#{$i} {
+    padding: #{$i}px;
+  }
+  .pt#{$i} {
+    padding-top: #{$i}px;
+  }
+  .pr#{$i} {
+    padding-right: #{$i}px;
+  }
+  .pb#{$i} {
+    padding-bottom: #{$i}px;
+  }
+  .pl#{$i} {
+    padding-left: #{$i}px;
+  }
+  .ptb#{$i} {
+    padding: #{$i}px 0;
+  }
+  .plr#{$i} {
+    padding: 0 #{$i}px;
+  }
+ }
+

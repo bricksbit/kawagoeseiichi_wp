@@ -1,0 +1,29 @@
+.p-header-image {
+  position: relative;
+  width: 100%;
+  // padding-bottom: 56.25%;
+  padding-bottom: 720px;
+  overflow: hidden;
+  // background-color: #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-header__logo {
+  @include m(img) {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.p-footer-logo--img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 1200px) {
+  .p-footer-logo--img {
+    width: 80%;
+  }
+  
+}

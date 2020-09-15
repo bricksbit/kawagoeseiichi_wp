@@ -1,0 +1,41 @@
+.l-main {
+  grid-row: 2;
+  overflow: auto;
+}
+
+.l-main-sub {
+  overflow: auto;
+  .l-content-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 92.1875%;
+    max-width: 1180px;
+    margin: 0 auto;
+    .l-content {
+    }
+    .l-side {
+    }
+  }
+}
+
+@media (min-width: 1200px)  { 
+  .l-main-sub {
+    .l-content-wrap {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-gap: 20px;
+      .l-content {
+      }
+      .l-side {
+
+      }
+    }
+  }
+  
+}
+.hero-sub {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

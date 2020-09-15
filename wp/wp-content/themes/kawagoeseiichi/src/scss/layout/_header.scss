@@ -1,0 +1,15 @@
+
+.l-header {
+  grid-row: 1;
+  display: block;
+  width: 100%;
+}
+
+.l-global-nav {
+  display: grid;
+  min-height: 100px;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+}
+
+

@@ -1,0 +1,91 @@
+// ==========================================================================
+// mixin
+// ==========================================================================
+
+/* bem
+-------------------------------------------------- */
+@mixin e($elements...) {
+  @each $element in $elements {
+    &__#{$element} {
+      @content;
+    }
+  }
+}
+
+@mixin m($modifiers...) {
+  @each $modifier in $modifiers {
+    &--#{$modifier} {
+      @content;
+    }
+  }
+}
+
+
+
+/* size(px-em)
+-------------------------------------------------- */
+@function _em($self, $parent:14) {
+  @return ($self / $parent) * 1em;
+}
+
+
+/* breakpoint
+-------------------------------------------------- */
+// min-width
+$breakpoint-up: (
+  'sm': 'screen and (min-width: 400px)',
+  'md': 'screen and (min-width: 768px)',
+  'lg': 'screen and (min-width: 1000px)',
+  'xl': 'screen and (min-width: 1200px)',
+) !default;
+
+// max-width
+$breakpoint-down: (
+  'sm': 'screen and (max-width: 399px)',
+  'md': 'screen and (max-width: 767px)',
+  'lg': 'screen and (max-width: 999px)',
+  'xl': 'screen and (max-width: 1199px)',
+) !default;
+
+// @desc - class名とルールセットを指定することで、レスポンシブに対応したスタイルを生成します。
+// @param {String} - 共通のclass名をクウォートとドットをつけて渡します（e.g. `.foo`）。
+// @param {Strind} - 使用するブレイクポイントを定義した変数を渡します。
+// @example
+// @include _responsive(".display-none") {
+//   display: none;
+// }
+// @example css - CSS output
+// .display-none {
+//   display: none;
+// }
+// @media screen and (min-width: 400px) {
+//   .display-none-sm {
+//     display: none;
+//   }
+// }
+@mixin _responsive($class, $bp: $_breakpoint-up) {
+  #{$class} {
+    @content;
+  }
+  @each $suffix, $value in $bp {
+    @media #{$value} {
+      #{$class}-#{$suffix} {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin _responsive_down($class, $bp: $_breakpoint-down) {
+  #{$class} {
+    @content;
+  }
+  @each $suffix, $value in $bp {
+    @media #{$value} {
+      #{$class}-#{$suffix} {
+        @content;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/css/style.css">
+  <title>bricks</title>
+</head>
+<body>
+  <div class="l-wrapper">
+    <header class="l-header">
+      <div class="l-container">
+        <nav class="l-global-nav p-global-nav">
+          <div id="navbar">
+            <div id="logo" class="reverse">
+              <div class="mobile-btn" onclick="openNav()">&#9776;</div>
+              <div class="p-header__logo"><img class="p-header__logo--img" src="../dist/img/logo.svg" alt=""></div>
+            </div>
+            <ul class="l-global-nav_list p-global-nav__list" id="links">
+              <li class="l-globalnav__list--item p-global-nav__list--item"><a href="/">ホーム</a></li>
+              <li class="l-globalnav__list--item p-global-nav__list--item"><a href="/profile">プロフィール</a></li>
+              <li class="l-globalnav__list--item p-global-nav__list--item"><a href="/idea">理念</a></li>
+              <li class="l-globalnav__list--item p-global-nav__list--item"><a href="/policies">政策</a></li>
+              <li class="l-globalnav__list--item p-global-nav__list--item"><a href="/activity-report">活動報告</a></li>
+              <li class="l-globalnav__list--item p-global-nav__list--item"><a href="/activites">議会活動</a></li>
+              <li class="l-globalnav__list--item p-global-nav__list--item"><a href="/blog">ブログ</a></li>            </ul>
+          </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mySidenav" class="sidenav">
+          <ul>
+            <li><a style="cursor:pointer;" class="closebtn" onclick="closeNav()">&times;</a></li>
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">プロフィール</a></li>
+            <li><a href="#">理念</a></li>
+            <li><a href="#">政策</a></li>
+            <li><a href="#">活動報告</a></li>
+            <li><a href="#">議会活動</a></li>
+            <li><a href="#">ブログ</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>

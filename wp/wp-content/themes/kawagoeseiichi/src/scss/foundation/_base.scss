@@ -1,0 +1,58 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  // font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a, input {
+  text-decoration: none;
+  transition-duration: 0.2s;
+  transition-property: background-color, color;
+  transition-timing-function: ease;
+}
+
+
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+} 
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+  }
+}
+
+header,img {
+  display: block;
+}
+
+a {
+  color: #050505;
+  &:hover {
+
+  }
+  &:visited {
+    color: #050505;
+  }
+}

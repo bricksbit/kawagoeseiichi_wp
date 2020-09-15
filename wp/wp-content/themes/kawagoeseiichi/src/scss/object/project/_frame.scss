@@ -1,0 +1,29 @@
+.p-idea {
+  @include m(text) {
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 35px 30px 13px;
+    p {
+      line-height: 2.4;
+      margin: 0 0 2em 0;
+    }
+  }
+}
+.p-frame {
+  background: #f9f9f9;
+  border: 7px solid #eee;
+  margin: 50px 0;
+  padding: 30px 20px;
+  ul {
+    li {
+      padding-bottom: 10px;
+      line-height: 2.4;
+    }
+  }
+}
+.p-frame02 {
+  background: #f9f9f9;
+  border: 7px solid #eee;
+  margin: 0 0 50px 0;
+  padding: 47px 50px 10px;
+}

@@ -35,3 +35,7 @@ readme.html
 .DS_Store
 docker-compose.yml
 index.php
+#db_data
+db_data/ib_logfile0
+db_data/ib_logfile1
+db_data/ibdata1
