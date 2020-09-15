@@ -36,15 +36,15 @@ const srcPath = {
   },
   styles: {
     src: "./src/scss/**/*.scss",
-    dist: ".",
-    map: "./map"
+    dist: "./",
+    map: "./"
   },
   scripts: {
     src: "./src/js/**/*.js",
     dist: "./dist/js/",
     map: "./dist/js/map",
-    core: "./src/js/core/**/*.js",
-    app: "./src/js/app/**/*.js"
+    core: "src/js/core/**/*.js",
+    app: "src/js/app/**/*.js"
   },
   images: {
     src: "./src/img/**/*.{jpg,jpeg,png,gif,svg}",

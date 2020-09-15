@@ -80,14 +80,13 @@ $paged = (int) get_query_var('paged');
                   <p class="p-article01__cat"><a href="<?php echo $term_url; ?>" rel="category tag"><?php echo $term_name; ?></a></p>
                 </h3>
               </article>
-
-                <?php endwhile; ?>
-            <?php else: ?>
-              <p>お知らせする情報はありません。</p>
-            <?php endif ?>
-            </div>
-          </div>
+              <?php endwhile; ?>
+          <?php else: ?>
+            <p>お知らせする情報はありません。</p>
+          <?php endif ?>
         </div>
+        </div>
+
         <div class="p-page-navi">
         <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(array('query' => $the_query)); } ?> </div>
         <?php wp_reset_postdata(); ?>
