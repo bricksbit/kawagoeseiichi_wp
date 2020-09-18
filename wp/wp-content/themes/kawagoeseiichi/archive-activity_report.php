@@ -15,9 +15,10 @@ $paged = (int) get_query_var('paged');
 
   $title = get_post_type_object($post_type)->label;
   $class=$post_type;
+  $taxonomy_slug = get_query_var('post_type');
 ?>
-  <main class="l-main-sub">
-    <div class="hero-sub"><img src="http://placehold.jp/0c9e9e/ffffff/1920x560.png" alt=""></div>
+<main class="l-main-sub <?php echo $taxonomy_slug; ?>">
+    <div class="hero-sub"></div>
 
     <h3 id="page_header_title">
       <div class="l-container"><?php echo $title; ?></div>
@@ -61,26 +62,17 @@ $paged = (int) get_query_var('paged');
               $term_name	= esc_html($terms[0]->name);
             endif;
         ?>
-          <article class="p-card-h">
-            <div class="p-card-h--inner" href="#">
-              <div class="p-card-h--img">
-                <a href="<?php the_permalink(); ?>">
-                <?php if (has_post_thumbnail()) { ?>
-                  <?php the_post_thumbnail('full', array('class' => '')); ?>
-                <?php	} else { ?>
-                  <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/no-imagethum.png" alt="" />
-                <?php } ?>
-                </a>
-              </div>
-              <div class="p-card-h--text">
-                <h3 class="p-card-h--title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                <p class="p-card-h__cat">
-                  <a href="<?php echo $term_url; ?>"><?php echo $term_name; ?></a>
-                </p>
-                <time class="p-card-h--date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
-              </div>
-            </div>
-          </article>
+            <article class="p-news-list__item p-article04">
+              <header class="p-article04__header">
+                  <p class="p-card-h__cat">
+                    <a href="<?php echo $term_url; ?>"><?php echo $term_name; ?></a>
+                  </p>
+                  <h2 class="p-article04__title">
+                  <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                </h2>
+              </header>
+              <p class="p-article04__excerpt"><?php the_excerpt(); ?></p>
+            </article>
           <?php endwhile; ?>
           <?php else: ?>
             <p>お知らせする情報はありません。</p>

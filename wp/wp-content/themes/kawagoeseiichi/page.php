@@ -10,8 +10,10 @@
 
 get_header();
 ?>
-  <main class="l-main-sub">
-    <div class="hero-sub"><img src="http://placehold.jp/0c9e9e/ffffff/1920x560.png" alt=""></div>
+  <?php $slug_name = $post->post_name; ?>
+  <main class="l-main-sub <?php echo $slug_name; ?>">
+    <div class="hero-sub">
+    </div>
 
     <h3 id="page_header_title">
       <div class="l-container"><?php the_title(); ?></div>

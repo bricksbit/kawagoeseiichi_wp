@@ -131,7 +131,6 @@ function is_mysmartphone() {
   }
  }
 
-add_action( 'widgets_init', 'kstyle_widgets_init' );
 function kstyle_widgets_init() {
 	register_sidebar( array(
     'name'          => 'サイドバー（ブログ）',
@@ -142,18 +141,19 @@ function kstyle_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
+add_action( 'widgets_init', 'kstyle_widgets_init' );
 
-add_action( 'widgets_init', 'kstyle_widgets_init2' );
-function kstyle_widgets_init2() {
-	register_sidebar( array(
-    'name'          => 'サイドバー（新着）',
-		'id'            => 'sidebar-2',
-		'before_widget' => '<article id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</article>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-}
+// function kstyle_widgets_init2() {
+// 	register_sidebar( array(
+//     'name'          => 'サイドバー（新着）',
+// 		'id'            => 'sidebar-2',
+// 		'before_widget' => '<article id="%1$s" class="widget %2$s">',
+// 		'after_widget'  => '</article>',
+// 		'before_title'  => '<h2 class="widget-title">',
+// 		'after_title'   => '</h2>',
+// 	) );
+// }
+// add_action( 'widgets_init', 'kstyle_widgets_init2' );
 
 /*-------------------------------------------*/
 /*  カスタムロゴ関連

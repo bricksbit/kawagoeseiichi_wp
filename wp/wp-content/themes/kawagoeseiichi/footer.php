@@ -4,7 +4,7 @@
         <div class="l-footer-wrap">
           <div class="l-footer--left p-footer-info">
             <h3 class="p-footer-logo">
-              <a class="p-footer-logo__link" href="#" target="_blank"><img class="p-footer-logo--img" src="dist/img/f-logo.svg" alt=""></a>
+              <a class="p-footer-logo__link" href="#" target="_blank"><img class="p-footer-logo--img" src="<?php echo get_template_directory_uri(); ?>/dist/img/f-logo.svg" alt=""></a>
             </h3>
             <p>〒124-8555</p>
             <p>東京都葛飾区立石5-13-1</p>
@@ -13,25 +13,22 @@
             <p class="pb30">FAX：03-3697-0137</p>
           </div>
           <div class="l-footer--center p-footer-nav__left">
-            <ul class="l-footer-menu">
-              <li><a href="#">プロフィール</a></li>
-              <li><a href="#">理念</a></li>
-              <li><a href="#">政策</a></li>
-              <li><a href="#">活動報告</a></li>
-              <li><a href="#">議会活動</a></li>
-              <li><a href="#">ブログ</a></li>
-              <li><a href="#">お問い合わせ</a></li>
-              <li><a href="#">個人情報保護方針</a></li>
-              <li><a href="#">サイトマップ</a></li>
-            </ul>
+            <?php wp_nav_menu( array(
+                'theme_location'=>'Footer_c',
+                'container'     =>'',
+                'menu_class'    =>'',
+                'items_wrap' => '<ul class="l-footer-menu">%3$s</ul>'
+              ));
+              ?> 
           </div>
           <div class="l-footer--right p-footer-nav__right">
-            <ul class="l-footer-menu">
-              <li><a href="#"></a>葛飾区</li>
-              <li><a href="#"></a>葛飾区議会</li>
-              <li><a href="#"></a>国民民主党</li>
-              <li><a href="#"></a>伊藤まさき</li>
-            </ul>
+            <?php wp_nav_menu( array(
+              'theme_location'=>'Footer_r',
+              'container'     =>'',
+              'menu_class'    =>'',
+              'items_wrap' => '<ul class="l-footer-menu">%3$s</ul>'
+            ));
+            ?>
           </div>
         </div>
       </div>

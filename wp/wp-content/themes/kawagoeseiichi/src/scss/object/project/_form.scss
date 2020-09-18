@@ -1,0 +1,162 @@
+/************************************
+** お問い合わせフォームの入力
+************************************/
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+select,
+textarea,
+.field {
+  display: block;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 0;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #eff1f5;
+  box-shadow: none;
+  color: #5c6b80;
+  font-size: 1em;
+  vertical-align: middle;
+  line-height: 45px;
+  transition: background-color 0.24s ease-in-out;
+}
+textarea {
+  max-width: 100%;
+  min-height: 120px;
+  line-height: 1.5em;
+  padding: 0.5em;
+  overflow: auto;
+}
+
+.p-contact-form,.p-form01 {
+  width: 100%;
+}
+.p-contact-form {
+  margin-bottom: 50px;
+
+}
+.p-form01 {
+  margin-bottom: 30px;
+}
+.p-form01 th {
+  text-align: left;
+  font-size: 14px;
+  color: #444;
+  padding-right: 5px;
+  background: #f7f7f7;
+  border: solid 1px #d7d7d7;
+  border-bottom: none;
+
+}
+.p-form01 td,
+.p-form01 th {
+    display: block;
+    border-top: none;
+    box-sizing: border-box;
+}
+.p-form01 th,td{
+  width: 100%;
+}
+.p-form01 tr:first-child th {
+  border-top: 1px solid #d7d7d7 !important
+}
+
+.p-form01 .any,
+.p-form01 .haveto {
+    font-size: 10px
+}
+
+.p-form01 td {
+  font-size: 13px;
+  border: solid 1px #d7d7d7
+}
+.entry-content .p-form01 tr,
+.entry-content table {
+    border: solid 1px #d7d7d7
+}
+.haveto {
+    font-size: 7px;
+    padding: 5px;
+    background: #ff9393;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 5px;
+    position: relative;
+    bottom: 1px
+}
+.any {
+    font-size: 7px;
+    padding: 5px;
+    background: #93c9ff;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 5px;
+    position: relative;
+    bottom: 1px
+}
+.verticallist .wpcf7-list-item {
+    display: block
+}
+#formbtn {
+    display: block;
+    padding: 15px;
+    width: 350px;
+    background: #2f9839;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 2px;
+    margin: 25px auto 0
+}
+#formbtn:hover {
+    background: #fff;
+    color: #ffaa56;
+    border: 2px solid #ffaa56
+}
+th {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 13px
+}
+td {
+  border-top: 1px solid #ededed;
+  padding: 12px
+}
+input,
+select,
+textarea {
+  border: 1px solid #dfdfdf;
+  letter-spacing: 1px;
+  margin: 0;
+  max-width: 100%;
+  resize: none
+}
+
+
+@media screen and (min-width: 992px) {
+  .p-form01 td,
+  .p-form01 th {
+    display: table-cell;
+  }  
+  .p-form01 th {
+    width: 30%;
+    border: solid 1px #d7d7d7
+  }
+  .p-form01 td {
+    width: 70%;
+
+  }
+  
+}

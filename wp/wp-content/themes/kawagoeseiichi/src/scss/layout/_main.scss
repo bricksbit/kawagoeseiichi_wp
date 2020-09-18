@@ -34,8 +34,54 @@
   
 }
 .hero-sub {
-  img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  min-width: inherit;
+  height: 350px;
+}
+@media screen and (min-width:1260px) {
+  .hero-sub {
+    min-width: 1180px;
+    height: 450px;
   }
 }
+
+.profile{
+  .hero-sub {
+    background: url(dist/img/sub-vidual01.jpg) no-repeat center center;
+    background-size: cover;
+    filter:sepia(70%);
+  }
+}
+.idea{
+  .hero-sub {
+    background: url(dist/img/sub-vidual02.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+.policy{
+  .hero-sub {
+    background: url(dist/img/sub-vidual03.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+.activity_report{
+  .hero-sub {
+    background: url(dist/img/sub-vidual04.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+.activity{
+  .hero-sub {
+    background: url(dist/img/sub-vidual05.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+.blog{
+  .hero-sub {
+    background: url(dist/img/sub-vidual06.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+
+
+
