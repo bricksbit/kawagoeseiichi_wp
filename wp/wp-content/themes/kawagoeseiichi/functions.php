@@ -558,3 +558,11 @@ function add_side_menu_manual() {
 <?php
 }
 add_action('admin_footer', 'add_side_menu_manual');
+
+function SearchFilter($query) {
+  if ($query->is_search) {
+    $query->set('post_type', 'post');
+  }
+return $query;
+}
+add_filter('pre_get_posts','SearchFilter');

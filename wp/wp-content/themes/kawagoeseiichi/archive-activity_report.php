@@ -12,7 +12,7 @@ get_header();
 
 $paged = (int) get_query_var('paged');
 
-
+  $post_type = get_post_type_query();
   $title = get_post_type_object($post_type)->label;
   $class=$post_type;
   $taxonomy_slug = get_query_var('post_type');
