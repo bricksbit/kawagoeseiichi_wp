@@ -44,7 +44,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/dist/js/app.js"></script>
-<script>
+<!-- <script>
       $('.c-accordion').liloAccordion();
     </script>
     <div id="fb-root"></div>
@@ -66,15 +66,15 @@
         js.src = "//connect.facebook.net/ja_JP/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
-    </script>
+    </script> -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91342158-1"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91342158-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-91342158-1');
+  gtag('config', 'UA-91342158-1'); -->
 </script>
 
     <?php wp_footer(); ?>
