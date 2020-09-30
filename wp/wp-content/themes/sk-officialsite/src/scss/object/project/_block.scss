@@ -1,0 +1,64 @@
+
+// ==========================================================================
+// project/block
+// ==========================================================================
+
+.p-block {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+
+  @include e(item) {
+    position: relative;
+    height: 200px;
+    margin-bottom: 50px;
+    padding: 35px;
+    .title {
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+  @include e(button) {
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-width: 220px;
+    height: 50px;
+    line-height: 50px;
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
+    @include m(label) {
+      text-align: center;
+    }
+  }
+
+}
+
+@media screen and (min-width: 767px) {
+  .p-block { 
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+
+@media (min-width: 900px) {
+  .p-block { 
+    grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr));
+    // grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+.p-block01 {
+  color: #fff;
+  background: #2f9839;
+}
+.p-block02 {
+  color: #fff;
+  background: #1d591e;
+}
+.p-block03 {
+  color: #fff;
+  background: #103311;
+}

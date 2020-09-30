@@ -1,0 +1,53 @@
+.c-box {
+  // border: 1px solid #ddd;
+  padding: 17px;
+  padding-bottom: 55px;
+  &:first-of-type {
+    border-right: none;
+  }
+}
+
+
+
+// ==========================================================================
+// project/card
+// ==========================================================================
+
+.p-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  // grid-gap: 20px;
+  align-items: stretch;
+  .p-card {
+    position: relative;
+    margin-bottom: 50px;
+    @include e(button) {
+      background: #fff;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      min-width: 220px;
+      height: 50px;
+      line-height: 50px;
+      &:hover {
+        background: #000;
+        color: #fff;
+      }
+      @include m(label) {
+        text-align: center;
+      }
+    }
+  }
+}
+@media screen and (min-width: 767px) {
+  .p-cards { 
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+
+@media (min-width: 900px) {
+  .p-cards { 
+    grid-template-columns: repeat(auto-fill, minmax(calc(100% / 3), 1fr));
+    // grid-template-columns: repeat(3, 1fr); 
+  }
+}
