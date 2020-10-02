@@ -92,4 +92,34 @@
   }
 }
 
+.privacy{
+  .hero-sub {
+    background: url(dist/img/sub-vidual07.png) no-repeat center center;
+    background-size: cover;
 
+  }
+}
+
+
+.contact{
+  .hero-sub {
+    background: url(dist/img/sub-vidual08.png) no-repeat center center;
+    background-size: cover;
+
+  }
+}
+
+.news{
+  .hero-sub {
+    background: url(dist/img/sub-vidual09.png) no-repeat center center;
+    background-size: cover;
+  }
+}
+.news {
+  h3 {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

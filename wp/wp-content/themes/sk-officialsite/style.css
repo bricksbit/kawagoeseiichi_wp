@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: sk-officialsite
+Theme Name: kawagoeseiichi
 Theme URI: https://www.kawagoeseiichi.com/
 Author: kawagoeseiichi.com
 Author URI https://www.kawagoeseiichi.com/
@@ -871,6 +871,26 @@ a:visited {
 .report .hero-sub {
   background: url(dist/img/sub-report.png) no-repeat center center;
   background-size: cover;
+}
+
+.privacy .hero-sub {
+  background: url(dist/img/sub-vidual07.png) no-repeat center center;
+  background-size: cover;
+}
+
+.contact .hero-sub {
+  background: url(dist/img/sub-vidual08.png) no-repeat center center;
+  background-size: cover;
+}
+
+.news .hero-sub {
+  background: url(dist/img/sub-vidual09.png) no-repeat center center;
+  background-size: cover;
+}
+
+.news h3 img {
+  width: 100%;
+  height: auto;
 }
 
 .c-menu-btn {

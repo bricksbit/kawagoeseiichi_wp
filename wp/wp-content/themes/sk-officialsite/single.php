@@ -32,7 +32,7 @@ endif;
     </div>
 
     <h3 id="page_header_title">
-      <div class="l-container"><?php the_title(); ?></div>
+      <div class="l-container"><?php echo $title; ?></div>
     </h3>
     <div id="bread_crumb">
       <div class="l-container">
@@ -48,13 +48,14 @@ endif;
       <div class="l-content">
       <?php 
 
-      if($post_type === 'post'): ?>
+      if($post_type === 'post' || $post_type === 'news'): ?>
         <?php if ( have_posts() ) : ?>
           <?php while( have_posts() ) : the_post(); ?>
             <?php the_content(); ?>
           <?php endwhile;?>
         <?php endif; ?>
-      <?php elseif( $post_type === 'news'): ?>
+      <!-- <?php //elseif( $post_type === 'news'): ?> -->
+
       <?php elseif( $post_type === 'activity_report'): ?>
         <?php if ( have_posts() ) : ?>
           <?php while( have_posts() ) : the_post(); ?>

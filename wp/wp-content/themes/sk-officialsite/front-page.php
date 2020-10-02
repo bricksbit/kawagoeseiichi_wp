@@ -99,7 +99,7 @@ echo do_shortcode('[smartslider3 slider="3"]');
               wp_reset_postdata();
               ?>
               <p class="p-info__list__btn">
-                <a class="p-btn" href="#">おしらせ一覧</a>
+                <a class="p-btn" href="/news">おしらせ一覧</a>
               </p>
             </div>
             <div class="p-activity-list">
